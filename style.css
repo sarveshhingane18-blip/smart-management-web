@@ -1,0 +1,15 @@
+.dark-bg {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* your existing login styles kept as-is ... */
+
+#map {
+  width: 90%;
+  height: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
+  border: 2px solid teal;
+}

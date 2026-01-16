@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Mapbox CSS -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body class="dark-bg">
+  <div style="text-align:center; margin-top:20px;">
+    <input id="city-input" placeholder="Enter city (e.g. Nagpur)" />
+    <button onclick="searchCity()">Search</button>
+    <div id="aqi-info" style="margin-top:10px; color:#0ff;"></div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Your JS -->
+  <script src="app.js"></script>
+
+  <!-- Mapbox JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.js"></script>
+</body>
+</html>

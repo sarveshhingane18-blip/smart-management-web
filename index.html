@@ -1,0 +1,14 @@
+function loginUser() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (!name || !email || !password) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  // temporary: fake login (no backend) – just redirect
+  alert("Login successful");
+  window.location.href = "dashboard.html";
+}
