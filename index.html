@@ -1,14 +1,22 @@
-function loginUser() {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-bg">
+  <div class="login-container">
+    <h1>Smart Management</h1>
+    <p>Login to continue</p>
 
-  if (!name || !email || !password) {
-    alert("Please fill all fields");
-    return;
-  }
+    <input id="name" placeholder="Name">
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
 
-  // temporary: fake login (no backend) – just redirect
-  alert("Login successful");
-  window.location.href = "dashboard.html";
-}
+    <button onclick="loginUser()">Login</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
